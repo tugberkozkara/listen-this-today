@@ -50,7 +50,7 @@ def api_request():
     return trackID
 
 
-# Use trackID to embed spotify frame, if id is None use a predefined id
+# Use trackID to embed spotify frame, if id is None use a predefined backup id
 @app.route("/")
 def homepage():
     if data.trackID is not None:

@@ -16,25 +16,34 @@
             background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(136, 168, 255,1));
         }
         .fa {
-            padding: 10px;
-            font-size: 20px;
-            width: 40px;
-            text-align: center;
-            text-decoration: none;
-            margin: 5px 2px;
-            border-radius: 50%;
+          padding: 10px;
+          font-size: 20px;
+          width: 40px;
+          text-align: center;
+          text-decoration: none;
+          margin: 5px 2px;
+          border-radius: 50%;
         }
         .fa:hover {
-            opacity: 0.7;
+          opacity: 0.7;
         }
         .fa-linkedin {
-            background: #007bb5;
-            color: white;
+          background: #007bb5;
+          color: white;
         }
         .fa-github {
-            background: #171515;
-            color: white;
+          background: #171515;
+          color: white;
         }
+        .fa-envelope{
+          background: #BB001B;
+          color: white;
+        }
+        @media screen and (max-width: 575px) {
+          #spoti {
+            margin-top: 1rem;
+          }
+}
 
       </style>
   
@@ -53,18 +62,19 @@
           <div class="col-sm">
             <main class="px-3 text-dark">
                 <h1 class="pb-5">Listen this today!</h1>
-                <p class="lead">Hey it's Tugberk, and this is the song of the day.<br> (from the songs i like of course hehe)</p>
+                <p class="lead">Hey it's Tuğberk, and this is the song of the day.<br> Listen it, enjoy it :)</p>
 
                 <p class="pt-5">New song will be here in: </p>
-                <div id="countdown" class="display-4"></div>
-                <div class="social pt-5">
+                <div id="countdown" class="display-6"></div>
+                <div class="social pt-4">
                   <a href="https://github.com/tugberkozkara" target="_blank" rel="noopener noreferrer" class="fa fa-github"></a>
                   <a href="https://www.linkedin.com/in/tugberkozkara/" target="_blank" rel="noopener noreferrer" class="fa fa-linkedin"></a>
+                  <a href="mailto:tugberkozkara@gmail.com" class="fa fa-envelope"></a>
                 </div>
                 
             </main>
           </div>
-          <div class="col-sm">
+          <div class="col-sm" id="spoti">
             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/{{ songID }}?utm_source=generator" width="75%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
           </div>
         </div>
@@ -92,7 +102,7 @@
    
   
     <footer class="mt-auto text-dark-50">
-      <p><a href="https://songs-i-like.herokuapp.com/" class="text-dark" target="_blank" rel="noopener noreferrer">API Reference</a></p>
+      <p class="text-dark">Made with &#x1F49C; and <a href="https://github.com/tugberkozkara/songs-i-like-api" class="text-dark" target="_blank" rel="noopener noreferrer">API</a></p>
     </footer>
   </div>
   
